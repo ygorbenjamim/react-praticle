@@ -2,7 +2,7 @@ import axios, { AxiosError, AxiosResponse } from "axios";
 import { HttpClient } from "../../interfaces/HttpClient";
 import { HttpRequest } from "../../interfaces/HttpRequest";
 
-export class AxiosHttpClientAdapte implements HttpClient {
+export class AxiosHttpClientAdapter implements HttpClient {
   async request(data: HttpRequest) {
     let axiosResponse: AxiosResponse;
     try {

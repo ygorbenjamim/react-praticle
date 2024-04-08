@@ -1,7 +1,7 @@
-import { UserPage } from "./pages/UserPage";
+import { ImplementsPage } from "./pages/ImplementsPage";
 
 function App() {
-  return <UserPage />;
+  return <ImplementsPage />;
 }
 
 export default App;
