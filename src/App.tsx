@@ -1,7 +1,10 @@
-import { ImplementsPage } from "./pages/ImplementsPage";
+import { useGetAllProducts } from "./hooks/useGetAllProducts";
+//import { ImplementsPage } from "./pages/ImplementsPage";
+import { ProductPage } from "./pages/ProductPage";
 
 function App() {
-  return <ImplementsPage />;
+  useGetAllProducts();
+  return <ProductPage />;
 }
 
 export default App;
