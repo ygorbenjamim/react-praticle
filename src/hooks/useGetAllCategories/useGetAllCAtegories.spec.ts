@@ -1,7 +1,7 @@
 import { renderHook, waitFor } from "@testing-library/react";
+import { AxiosError } from "axios";
 import { useGetAllCategories } from ".";
 import { getAllCategoriesApi } from "../../services/api/categoriesApi";
-import { AxiosError } from "axios";
 
 jest.mock("../../services/api/categoriesApi");
 
