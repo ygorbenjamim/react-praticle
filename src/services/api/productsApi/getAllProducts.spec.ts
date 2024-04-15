@@ -11,10 +11,9 @@ describe("Serviço para buscar produtos", () => {
     };
 
     axios.get = jest.fn().mockResolvedValue(mockResponse);
-
     const products = await getAllProductsApi();
 
+    expect(axios.get).toHaveBeenCalledWith("https://fakestoreapi.com/products");
     expect(mockResponse.data).toEqual(products);
-    //await waitFor(() => {});
   });
 });

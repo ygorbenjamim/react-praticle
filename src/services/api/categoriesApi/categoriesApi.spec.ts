@@ -12,6 +12,9 @@ describe("Serviço para buscar as categorias", () => {
     ];
     axios.get = jest.fn().mockResolvedValue({ data: mockCategories });
     const categories = await getAllCategoriesApi();
+    expect(axios.get).toHaveBeenCalledWith(
+      "https://fakestoreapi.com/products/categories"
+    );
     expect(categories).toEqual(mockCategories);
   });
 });
